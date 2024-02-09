@@ -25,10 +25,22 @@ public class Modeler extends PApplet {
 	}
 	ellipse(mouseX, mouseY, 50, 50);
     }
-    public void mousePressed() {
-	background(64);
+    boolean isMouseOver(int x, int y, int w, int h){
+	if(mouseX >= x && mouseX <= x + w && mouseY >= y && mouseY <= y + h) {
+		return true;
+	}
+  	return false;
     }
+
+    void mousePressed() {
+	if(isMouseOver(width/2,height/2,100,50) == true) {
+		println("Mouse pressed button");
+    		background = !background;
+	}
+    }
+	    
     public static void main(String[] args) {
+	background(64);
 	String[] processingArgs = {"Modeler"};
 	Modeler Modeler = new Modeler();
 	PApplet.runSketch(processingArgs, Modeler);
