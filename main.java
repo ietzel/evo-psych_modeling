@@ -45,10 +45,6 @@ public class Modeler extends PApplet {
 		}
 	    }
         }
-	if(isMouseOver(width/2,height/2,100,50) = true) {
-		println("Mouse pressed button");
-    		background = !background;
-	}
     }
 	    
     public static void main(String[] args) {
