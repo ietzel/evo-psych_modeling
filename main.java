@@ -10,8 +10,7 @@ public class Modeler extends PApplet {
 	    {"finance/accounting", "responsibility strategy", "HR & A", "UX & customer support"},
 	    {"sales/marketing", "communications", "compliance/legal", "party"}
     };
-    //non-constant (i.e. not too specific), duplication of values between variables (that is, not too vague), saving-deleting cycle (meaning secure carriability in memory), arrayable (in other words, must be plenty of space in program)
-    //attention (thoughts), words (actions), habits (character), destiny (environment)
+    //String[] guide = {"attention (thoughts)", "words (actions)", "habits (character)", "destiny (environment)"};
     public void_settings() {
 	size(500, 400);
     }
