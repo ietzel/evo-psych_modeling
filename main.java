@@ -1,7 +1,7 @@
 import processing.core.PApplet;
 
 public class Modeler extends PApplet {
-    String[] vars = {"structural auto-evolution", "structural copying of information", "hypercycle-mediating interface", "multi-stage"};
+    //String[] vars = {"structural auto-evolution", "structural copying of information", "hypercycle-mediating interface", "multi-stage"};
     String[] organization = {"production", "R&D", "administration/management", "purchasing", "revenue"};
     String[][] business_functions = {
 	    {"operations", "environmental sustainability", "supply chain", "product"},
