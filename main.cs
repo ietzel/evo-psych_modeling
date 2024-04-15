@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace main
-  static class Modeler {
+  static class Main {
     /*String[] vars = {"structural auto-evolution", "structural copying of information", "hypercycle-mediating interface", "multi-stage"};
     String[] organization = {"production", "R&D", "administration/management", "purchasing", "revenue"};
     String[][] business_functions = {
