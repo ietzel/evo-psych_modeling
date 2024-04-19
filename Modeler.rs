@@ -1,13 +1,7 @@
-slint::slint!{
-    export component Modeler inherits Window {
-        Text {
-            text: "Modeler";
-            color: green;
-        }
-    }
-}
+import { Button, StandardTableView } from "std-widgets.slint";
 
-let vars: [u8; 4] = {"structural auto-evolution", "structural copying of information", "hypercycle-mediating interface", "multi-stage"};
+/*let guide: [u8; 4] = ["attention (thoughts)", "words (actions)", "habits (character)", "destiny (environment)"];
+let vars: [u8; 4] = {"structural auto-evolution", "structural copying of information", "hypercycle-mediating interface", "multi-stage"};*/
 let organization: [u8; 5] = ["production", "R&D", "administration/management", "purchasing", "revenue"];
 let business_functions: [[ou8, 4]; 5] = [
         ["operations", "environmental sustainability", "supply chain", "product"],
@@ -16,41 +10,46 @@ let business_functions: [[ou8, 4]; 5] = [
 	["finance/accounting", "responsibility strategy", "HR & A", "UX & customer support"],
 	["sales/marketing", "communications", "compliance/legal", "party"]
 ];
-let guide: [u8; 4] = ["attention (thoughts)", "words (actions)", "habits (character)", "destiny (environment)"];
-const x_lent = 50;
-const y_lent = 40;
+
+slint::slint!{
+    export component Modeler inherits Window {
+        Text {
+            text: "Modeler";
+            color: green;
+        }
+	Button { text: organization[0]; }
+	Button { text: organization[1]; }
+	Button { text: organization[2]; }
+	Button { text: organization[3]; }
+	Button { text: organization[4]; }
+	StandardTableView {
+        	columns: [
+			{ title: organization[0] },
+            		{ title: organization[1] },
+	    		{ title: organization[2] },
+            		{ title: organization[3] },
+            		{ title: organization[4] },
+        	];
+        	rows: [
+            		[
+                		{ text:  business_functions[0][0]}, { text: business_functions[0][1] }, { text:  business_functions[0][2]}, { text: business_functions[0][3] },
+            		],
+            		[
+                		{ text:  business_functions[1][0]}, { text: business_functions[1][1] }, { text:  business_functions[1][2]}, { text: business_functions[1][3] },
+            		],
+            		[
+                		{ text:  business_functions[2][0]}, { text: business_functions[2][1] }, { text:  business_functions[2][2]}, { text: business_functions[2][3] },
+            		],
+			[
+                		{ text:  business_functions[3][0]}, { text: business_functions[3][1] }, { text:  business_functions[3][2]}, { text: business_functions[3][3] },
+            		],
+            		[
+                		{ text:  business_functions[4][0]}, { text: business_functions[4][1] }, { text:  business_functions[4][2]}, { text: business_functions[4][3] },
+            		]
+        	];
+	}
+}
 
 fn main() {
     Modeler::new().unwrap().run().unwrap();
 }
-  /*
-    fn draw() {
-	  for i in &organization {
-		  text(organization[i], i*x_lent, 0);
-		  for j in &business_functions[i] {
-			  text(business_functions[i][j], i*x_lent, j*y_lent);
-		  }
-	  }
-  
-    boolean isMouseOver(int x, int y, int w, int h) {
-	    if(mouseX >= x && mouseX <= x + w && mouseY >= y && mouseY <= y + h) {
-		    return true;
-	    }
-  	    return false;
-      }
-
-      void mousePressed() {
-        for(int i = 0; i < organization.length; i++) {
-	        for(int j = -1; i < business_functions[i].length; j++) {
-	          if(isMouseOver(i*width/10,(j+1)*height/10,(i+1)*width/10,(j+2)*height/10) = true) {
-		          if(isMouseOver(width,height,0,height/10) == true) {
-		            println(business_functions[i][j]+" business function, maybe in image of "+organization[i]+"business function category.");
-		          } else {
-		            println(organization[i]+" business function category possibly in good shape.");
-		          }
-		        }
-	        }
-        }
-     }
-}*/
-    
