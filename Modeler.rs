@@ -13,7 +13,7 @@ let business_functions: [[ou8, 4]; 5] = [
 
 slint::slint!{
 	export component Modeler inherits Window {
-		width: 2048px;
+		width: 1024px;
     		height: 1024px;
 		TabWidget {
 			Tab {
