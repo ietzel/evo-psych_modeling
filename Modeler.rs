@@ -66,6 +66,13 @@ slint::slint!{
 			}
 		}
 		Tab {
+			title: "Principles/Policies/Conditions";
+			Text {
+				text: "Principles/Policies/Conditions";
+				color: green;
+			}
+		}
+		Tab {
 			title: "Graph";
 			Text {
 				text: "Graph";
