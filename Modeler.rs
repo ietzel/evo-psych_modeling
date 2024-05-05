@@ -14,6 +14,10 @@ let principles: [u8; 7] = {"honesty/integrity/transparency", "compassion/respect
 let policies: [u8; 14] = {"anti-discrimination", "workplace health/safety/security", "employee code of conduct & anti-harassment", "attendance & vacation & time-off", "employee complaint", "work schedule & rest period", "substance abuse", "mobile device management", "compensation and benefits", "travel", "inclement weather", "remote work", "conflict of interest", "acceptable use"};
 let conditions: [u8; 5] = {"compensation", "safety", "relationships", "skill discretion", "prospects"};
 
+fn calculate() {
+//
+}
+
 slint::slint!{
 	export component Modeler inherits Window {
 		width: 1024px;
