@@ -5,7 +5,7 @@ let guide: [u8; 4] = ["attention (thoughts)", "words (actions)", "habits (charac
 let organization: [u8; 5] = ["production", "R&D", "administration/management", "purchasing", "revenue"];
 let business_functions: [[ou8, 4]; 5] = [
         ["operations", "environmental sustainability", "supply chain", "product"],
-	["technology", "information security", "data analytics", "learning"],
+	["technology", "information security", "data analysis", "learning"],
 	["planning", "organizing & staffing", "controlling", "leading"],
 	["finance/accounting", "responsibility strategy", "HR & A", "UX & customer support"],
 	["sales/marketing", "communications", "compliance/legal", "party"]
