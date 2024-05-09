@@ -14,8 +14,12 @@ let principles: [u8; 7] = {"honesty/integrity/transparency", "compassion/respect
 let policies: [u8; 14] = {"anti-discrimination", "workplace health/safety/security", "employee code of conduct & anti-harassment", "attendance & vacation & time-off", "employee complaint", "work schedule & rest period", "substance abuse", "mobile device management", "compensation and benefits", "travel", "inclement weather", "remote work", "conflict of interest", "acceptable use"};
 let conditions: [u8; 5] = {"compensation", "safety", "relationships", "skill discretion", "prospects"};
 
-fn calculate() {
-	return 0;
+fn calculate(arr: &mut [i32]) {
+	avg = 0
+        for i in range(0, arr.len()) {
+	        avg += arr[i];
+        }
+        return avg/arr.len();
 }
 
 slint::slint!{
