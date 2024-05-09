@@ -15,7 +15,7 @@ let policies: [u8; 14] = {"anti-discrimination", "workplace health/safety/securi
 let conditions: [u8; 5] = {"compensation", "safety", "relationships", "skill discretion", "prospects"};
 
 fn calculate(arr: &mut [i32]) {
-	avg = 0
+	avg = 0;
         for i in range(0, arr.len()) {
 	        avg += arr[i];
         }
