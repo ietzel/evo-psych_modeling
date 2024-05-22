@@ -7,7 +7,7 @@ let business_functions: [[ou8, 4]; 5] = [
         ["operations", "growth", "environmental sustainability", "supply chain"],
 	["technology", "information security", "data analysis", "learning"],
 	["planning", "organizing & staffing", "controlling", "leading"],
-	["finance/accounting", "responsibility strategy", "HR & A", "UX & customer support"],
+	["finance/accounting", "responsibility strategy", "HR", "UX & customer support"],
 	["sales/marketing", "communications", "compliance/legal", "party"]
 ];
 let principles: [u8; 7] = {"honesty/integrity/transparency", "compassion/respect", "responsibility/accountability", "loyalty/trustworthiness", "law-abiding", "fairness", "leadership"};
