@@ -4,7 +4,7 @@ let vars: [u8; 4] = {"structural auto-evolution", "structural copying of informa
 let guide: [u8; 4] = ["attention (thoughts)", "words (actions)", "habits (character)", "destiny (environment)"];
 let organization: [u8; 5] = ["production", "R&D", "administration/management", "purchasing", "revenue"];
 let business_functions: [[ou8, 4]; 5] = [
-        ["operations", "environmental sustainability", "supply chain", "product"],
+        ["operations", "growth", "environmental sustainability", "supply chain"],
 	["technology", "information security", "data analysis", "learning"],
 	["planning", "organizing & staffing", "controlling", "leading"],
 	["finance/accounting", "responsibility strategy", "HR & A", "UX & customer support"],
