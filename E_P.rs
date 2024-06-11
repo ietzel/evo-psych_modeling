@@ -23,7 +23,7 @@ fn calculate(arr: &mut [i32]) {
 }
 
 slint::slint!{
-	export component Modeler inherits Window {
+	export component E_P inherits Window {
 		width: 1024px;
     		height: 1024px;
 		TabWidget {
