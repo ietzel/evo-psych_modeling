@@ -2,12 +2,12 @@ import { Button, StandardTableView, TabWidget, TextEdit } from "std-widgets.slin
 
 let vars: [u8; 4] = {"structural auto-evolution", "structural copying of information", "hypercycle-mediating interface", "multi-stage"};
 let guide: [u8; 4] = ["attention (thoughts)", "words (actions)", "habits (character)", "destiny (environment)"];
-let organization: [u8; 5] = ["production", "R&D", "administration/management", "purchasing", "revenue"];
+let organization: [u8; 5] = ["R&D", "purchasing", "administration/management", "production", "revenue"];
 let business_functions: [[ou8, 4]; 5] = [
-        ["operations", "growth", "environmental sustainability", "supply chain"],
 	["technology", "information security", "data analysis", "learning"],
-	["planning", "organizing & staffing", "controlling", "leading"],
 	["finance/accounting", "responsibility strategy", "HR", "UX & customer support"],
+	["planning", "organizing & staffing", "controlling", "leading"],
+	["operations", "growth", "environmental sustainability", "supply chain"],
 	["sales/marketing", "communications", "compliance/legal", "party"]
 ];
 let principles: [u8; 7] = {"honesty/integrity/transparency", "compassion/respect", "responsibility/accountability", "loyalty/trustworthiness", "law-abiding", "fairness", "leadership"};
